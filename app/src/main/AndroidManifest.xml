@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ssis_tracker">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.procesos.ProcesosActivity"
+            android:label="Procesos"></activity>
+        <activity
+            android:name=".view.home.HomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".view.login.CambiarPasswordActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".view.proyectos.ProyectosActivity"
+            android:label="Proyectos"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.actividades.ActividadesActivity"
+            android:label="Actividades"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.imagenesdocs.ImagenesDocActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppThemeImage" />
+        <activity
+            android:name=".view.agenda.AgendarTemaActivity"
+            android:label="Agendar Tema"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.agregarcomentarios.ActivityComentar"
+            android:label="Comentar"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.adjuntarimagenes.ActivityFolderImagenes"
+            android:label="Imagenes"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.adjuntarimagenes.ActivityImagenesEnCarpeta"
+            android:label="Imagenes"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.crearnoticia.CrearNoticiaActivity"
+            android:label="Crear Noticia"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

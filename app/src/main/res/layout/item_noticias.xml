@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutImagenesNotificacion"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                 <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewImagenNotificacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="#81000000"
+                    android:padding="8dp"
+                    android:layout_height="35dp">
+
+                        <TextView
+                            android:id="@+id/TextViewCantidadImagen"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:textSize="13sp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/TextViewHeaderNotificaciones"
+                android:textStyle="bold"
+                android:textColor="@color/PrimaryText"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/TextViewMensajeNotificacion"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="7dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TextViewUsuarioNotificacion"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/TextViewFechaNotificacion"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:textSize="10sp"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/DividerColor"
+        android:id="@+id/viewDivider"
+        android:layout_height="1px"/>
+
+</LinearLayout>

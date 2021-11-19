@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <item android:id="@+id/nav_administracion"
+            android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_performance"
+                    android:icon="@drawable/ic_equalizer"
+                    android:title="Desempeño" />
+                <item
+                    android:id="@+id/nav_direcciones"
+                    android:icon="@drawable/ic_layers_black"
+                    android:enabled="false"
+                    android:visible="false"
+                    android:title="Direcciones" />
+                <!--    <item
+                        android:id="@+id/nav_proyectos"
+                        android:icon="@drawable/ic_menu_manage"
+                        android:enabled="false"
+                        android:visible="false"
+                        android:title="Proyectos" /> -->
+            </menu>
+        </item>
+        <item android:id="@+id/nav_operaciones"
+            android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_find"
+                    android:icon="@drawable/ic_search_black"
+                    android:enabled="false"
+                    android:visible="false"
+                    android:title="Buscar" />
+
+            </menu>
+        </item>
+        <item android:id="@+id/nav_comunicacion"
+            android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_agenda"
+                    android:icon="@drawable/ic_calendar"
+                    android:enabled="false"
+                    android:visible="false"
+                    android:title="Agenda Staff" />
+
+                <item
+                    android:id="@+id/nav_notificaciones"
+                    android:icon="@drawable/ic_notificaciones"
+                    android:title="Notificaciones" />
+
+               <!-- <item
+                    android:id="@+id/nav_nueva_noticia"
+                    android:icon="@drawable/ic_notificaciones"
+                    android:title="Crear Noticia" /> -->
+
+            </menu>
+        </item>
+
+    <group>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_input"
+            android:title="Cerrar Sesión" />
+    </group>
+
+
+
+</menu>

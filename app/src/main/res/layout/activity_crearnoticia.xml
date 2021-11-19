@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/PrimaryText"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/text_separator"
+                    android:text="TITULO DE LA NOTICIA"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/EditTextTituloNoticia"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/PrimaryText"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/text_separator"
+                    android:layout_width="wrap_content"
+                    android:text="DESCRIPCIÓN DE LA NOTICIA"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/EditTextDescripcionNoticia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextViewMsjSinAdjuntos"
+                android:layout_width="wrap_content"
+                android:text="Sin imagenes adjuntas"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewImagenesAdjuntas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FloatingActionButtonAdjuntarImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="20"
+        tools:ignore="MissingConstraints,VectorDrawableCompat"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="end|bottom"
+        android:tint="#fff"
+        app:srcCompat="@drawable/ic_attach"  />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

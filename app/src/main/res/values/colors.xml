@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#009688</color>
+    <color name="LightPrimaryColor">#B3E5FC</color>
+    <color name="TextIcons">#FFFFFF</color>
+    <color name="PrimaryText">#212121</color>
+    <color name="SecondayText">#757575</color>
+    <color name="DividerColor">#BDBDBD</color>
+    <color name="CircularIconBase">#7A7A7A</color>
+    <color name="TextResaltar">#7E2D2D</color>
+    <color name="imageThemeActivity">#000000</color>
+    <color name="SombraToggle">#44000000</color>
+    <color name="ToggleOn">#4ea4f0</color>
+
+    <!-- todos los titulos van a tener un bold  -->
+</resources>

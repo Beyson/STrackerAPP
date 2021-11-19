@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ssis_tracker</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="direcciones">Direcciones</string>
+    <string name="img_content_description">Direcciones</string>
+    <string name="Procesosrealizado">% Realizado</string>
+    <string name="Diastranscurridos">% Dias Transcurridos</string>
+    <string name="Llamados">Llamado de atención</string>
+    <string name="textWithoutData">NO SE DETECTARON DATOS</string>
+    <string name="AvanceMetas">% Metas</string>
+    <string name="Metas">Metas</string>
+    <string name="agendar">Agendar Staff</string>
+    <string name="estadometas">Estado de Metas</string>
+    <string name="imgContentDescripcion">Content Description</string>
+    <string name="Comentario">COMENTARIOS</string>
+    <string name="Imagenes">IMAGENES</string>
+    <string name="procesosregistrados">Procesos Registrados</string>
+    <string name="Eficiencia">Eficiencia</string>
+    <string name="procesosAtrasado">Procesos atrasados</string>
+    <string name="procesosTerminados">Procesos terminados</string>
+    <string name="procesosTerminadosATiempo">Procesos terminados a tiempo</string>
+    <string name="actividadesdependientes">ACTIVIDADES DEPENDIENTES</string>
+</resources>

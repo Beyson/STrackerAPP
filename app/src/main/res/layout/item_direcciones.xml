@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDirecciones"
+        card_view:cardElevation="@dimen/card_elevation"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="@dimen/card_corner_radius"
+        card_view:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/imageViewDireccion"
+                android:contentDescription="@string/img_content_description"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:baselineAligned="false"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/ly_circular_size"
+                        android:id="@+id/relativeLayoutSiglas"
+                        android:background="@drawable/drw_acronym"
+                        android:layout_centerInParent="true"
+                        android:layout_height="@dimen/ly_circular_size">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/textViewSiglas"
+                            android:textAlignment="center"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold"
+                            android:textColor="@color/TextIcons"
+                            android:layout_centerInParent="true"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="2px"
+                    android:background="@color/DividerColor"
+                    android:layout_marginRight="@dimen/divides_margin"
+                    android:layout_height="match_parent"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/textViewNombreDireccion"
+                        android:textColor="@color/PrimaryText"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/textViewDirector"
+                        android:textColor="@color/SecondayText"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="@dimen/text_separator"
+                        android:id="@+id/textViewDescripcion"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/SecondayText"
+                        android:text=""
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
